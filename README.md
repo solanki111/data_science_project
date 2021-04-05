@@ -1,7 +1,7 @@
 data_science_project
 ==============================
 
-playgrpound for data science projects
+playground for data science projects
 
 Project Organization
 ------------
