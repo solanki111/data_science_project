@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import os
 
 def read_data():
     # set the path of the raw data
@@ -11,7 +12,7 @@ def read_data():
     train_df = pd.read_csv(train_file_path, index_col='PassengerId')
     test_df = pd.read_csv(test_file_path, index_col='PassengerId')
     test_df['Survived'] = -888
-    df = pd.concat((trains_df, test_df), axis=0)
+    df = pd.concat((train_df, test_df), axis=0)
     return df
 
 
